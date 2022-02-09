@@ -7,11 +7,11 @@ app.set('view engine','pug');
 
 const connectDB=require('./db/db')
 require('dotenv').config();
+app.use(express.json());
 const todoRoute = require('./routes/todoRoute')
 port = process.env.PORT || 3000;
 
 
-app.use(express.json());
 app.use('/',todoRoute)
 
 const start=async()=>{

@@ -1,0 +1,20 @@
+head
+    title 
+    body
+    center
+        div 
+            form(role='form' method='POST' action='./add')
+                label(for='date') Date: 
+                input#date.form-control(type='text', placeholder='date' name='date')
+                br
+                br
+                label(for='titre') Titre: 
+                input#titre.form-control(type='text', placeholder='titre' name='titre')
+                br
+                br
+                label(for='message') Message: 
+                input#message.form-control(type='text', placeholder='message' name='message')
+                br
+                br
+                button(type='submit') Submit
+        
