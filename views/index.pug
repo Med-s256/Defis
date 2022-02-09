@@ -1,0 +1,16 @@
+head 
+    title=title 
+    
+    body 
+        table(border=1)
+            tr 
+                td date 
+                td titre 
+                td message
+                
+             
+            each val in all 
+                tr
+                    td #{val.date}
+                    td #{val.titre}
+                    td #{val.message}
